@@ -5,21 +5,26 @@ para los motores de generación.
 
 ## Convención de nombres
 
-El archivo se llama igual que el `nombre` del element en `brands/bites/elements.json`:
+Un element puede tener uno o más archivos de referencia. La regla:
 
-| Element (`nombre`) | Archivo esperado |
+- **Archivo primario:** `{nombre}.{ext}` (ej. `bites-vasito.png`)
+- **Variantes adicionales:** `{nombre}-{descriptor}.{ext}` (ej. `bites-carrito-frente.jpeg`, `bites-carrito-arriba.jpeg`)
+
+El skill `generar-imagen` toma todos los archivos cuyo nombre empieza con `{nombre}`
+y elige cuál sube según el contexto del brief (ej. si el brief pide vista frontal,
+prefiere `*-frente`).
+
+## Inventario actual
+
+| Element (`nombre`) | Archivos |
 |---|---|
-| bites-logo | bites-logo.png |
-| bites-vasito | bites-vasito.png |
-| bites-carrito | bites-carrito.png |
-| bites-estilo-noche | bites-estilo-noche.png (o .jpg) |
+| bites-logo | _pendiente_ |
+| bites-vasito | _pendiente_ |
+| bites-carrito | bites-carrito-arriba.jpeg, bites-carrito-frente.jpeg, bites-carrito-frente2.jpeg |
+| bites-minipancakes | bites-minipancakes.jpeg |
+| bites-estilo-noche | _pendiente_ |
 
 ## Cuándo se usan
 
 Las skills priorizan los uploads ad-hoc del usuario. Solo si un rol requerido
 no está cubierto, el skill sube este archivo a Higgsfield como fallback.
-
-## Estado actual
-
-Vacía. Regina/Memo colocan los archivos canónicos aquí cuando estén disponibles.
-Mientras tanto, el flujo opera con uploads ad-hoc del usuario.

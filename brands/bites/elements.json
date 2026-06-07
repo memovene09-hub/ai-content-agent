@@ -23,7 +23,15 @@
       "tipo": "set",
       "tags": ["carrito", "puesto", "calle", "noche", "ambiente"],
       "cuando_usar": "Cuando la pieza muestra el carrito/puesto de Bites en escena. Útil para hero shots, ambientación nocturna urbana, sensación de lugar.",
-      "descripcion": "El carrito o puesto Bites — el set físico donde se sirve. Referencia para escenas que incluyan el espacio."
+      "descripcion": "El carrito o puesto Bites — el set físico donde se sirve. Múltiples ángulos disponibles localmente (frente, arriba) en brands/bites/references/."
+    },
+    {
+      "higgsfield_id": "PENDIENTE",
+      "nombre": "bites-minipancakes",
+      "tipo": "producto",
+      "tags": ["producto", "minipancakes", "pancakes", "comida", "antojo"],
+      "cuando_usar": "Cuando la pieza muestra el producto mini-pancakes de Bites. Útil para close-ups apetitosos, hero shots de producto, escenas de armado.",
+      "descripcion": "Mini-pancakes Bites — uno de los productos estrella. Referencia visual para que el motor reproduzca el producto correctamente."
     },
     {
       "higgsfield_id": "PENDIENTE",
