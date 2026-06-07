@@ -1,0 +1,29 @@
+{
+  "client_id": "claryon",
+  "elements": [
+    {
+      "higgsfield_id": "PENDIENTE",
+      "nombre": "claryon-logo",
+      "tipo": "logo",
+      "tags": ["logo", "wordmark", "iso", "marca", "claryon"],
+      "cuando_usar": "Cualquier pieza que necesite el logo completo (iso + wordmark) como overlay o referencia visual. Para slides tipográficos el logo se embebe vía HTML desde references/claryon-logo.png — este element es para piezas AI puras.",
+      "descripcion": "Logo Claryon completo: iso de engranaje + wordmark 'CLARYON' en serif Fraunces 900. Versión blanca sobre fondo transparente. Archivo local: references/claryon-logo.png."
+    },
+    {
+      "higgsfield_id": "PENDIENTE",
+      "nombre": "claryon-iso",
+      "tipo": "isotipo",
+      "tags": ["iso", "isotipo", "engranaje", "icono", "marca"],
+      "cuando_usar": "Cuando se necesita una marca compacta (ej. avatar de perfil, esquinas de slides, watermark discreto, piezas donde el wordmark completo es demasiado grande).",
+      "descripcion": "Solo el isotipo de engranaje del logo Claryon, sin wordmark. Para usos donde la marca debe ser sutil o caber en espacios pequeños."
+    },
+    {
+      "higgsfield_id": "PENDIENTE",
+      "nombre": "claryon-paleta",
+      "tipo": "paleta",
+      "tags": ["paleta", "colores", "morado", "navy", "lavanda"],
+      "cuando_usar": "Como style reference cuando se genera una pieza nueva y se quiere asegurar la paleta exacta (#693f8c, #131f3c, #bdb9d7, #ffffff).",
+      "descripcion": "Swatch de la paleta oficial Claryon en muestras planas: morado #693f8c, navy #131f3c, lavanda #bdb9d7, blanco. Sirve como referencia colorimétrica al motor."
+    }
+  ]
+}

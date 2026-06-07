@@ -1,0 +1,18 @@
+{
+  "client_id": "bites",
+  "schema": {
+    "id": "string — slug único del patrón",
+    "proposito": "string — qué problema/contenido resuelve",
+    "tipo_pieza": "imagen | video | carrusel | hero",
+    "formato": "string — referencia a formats.md (ej. 'post 4:5')",
+    "elementos_usados": ["array de nombres del elements.json"],
+    "constraints": ["array de constraints validados — qué fue crítico para que funcionara"],
+    "tone": "string — descriptores de mood/iluminación/composición",
+    "modelo": "string — motor que se usó",
+    "tags": ["array de tags para búsqueda por similitud"],
+    "prompt_plantilla": "string — el prompt que funcionó, con variables {EN_LLAVES}",
+    "aprobado_por": "string — quién aprobó",
+    "fecha": "ISO date"
+  },
+  "patrones_exitosos": []
+}

@@ -1,0 +1,37 @@
+{
+  "client_id": "bites",
+  "elements": [
+    {
+      "higgsfield_id": "PENDIENTE",
+      "nombre": "bites-logo",
+      "tipo": "logo",
+      "tags": ["logo", "marca", "bites"],
+      "cuando_usar": "Como overlay de marca en cualquier pieza, watermark, o referencia visual para que el motor mantenga la identidad.",
+      "descripcion": "Logo principal de Bites en PNG transparente. Pendiente de subir a Higgsfield y registrar ID."
+    },
+    {
+      "higgsfield_id": "PENDIENTE",
+      "nombre": "bites-vasito",
+      "tipo": "producto",
+      "tags": ["producto", "vasito", "packaging", "to-go"],
+      "cuando_usar": "Cuando la pieza muestra el producto en vasito (formato individual to-go). Bueno para close-ups apetitosos y escenas nocturnas con producto en mano.",
+      "descripcion": "El vasito Bites — packaging individual de la marca. Referencia visual para que el motor reproduzca el packaging correctamente."
+    },
+    {
+      "higgsfield_id": "PENDIENTE",
+      "nombre": "bites-carrito",
+      "tipo": "set",
+      "tags": ["carrito", "puesto", "calle", "noche", "ambiente"],
+      "cuando_usar": "Cuando la pieza muestra el carrito/puesto de Bites en escena. Útil para hero shots, ambientación nocturna urbana, sensación de lugar.",
+      "descripcion": "El carrito o puesto Bites — el set físico donde se sirve. Referencia para escenas que incluyan el espacio."
+    },
+    {
+      "higgsfield_id": "PENDIENTE",
+      "nombre": "bites-estilo-noche",
+      "tipo": "estilo",
+      "tags": ["estilo", "noche", "luz-calida", "neon", "mood"],
+      "cuando_usar": "Como style reference en cualquier pieza para forzar el mood nocturno cálido con acentos neón rojo/amarillo.",
+      "descripcion": "Pieza de referencia que captura la estética nocturna Bites: luz cálida, neón sutil rojo y amarillo, fondos oscuros, vibe urbano de antojo."
+    }
+  ]
+}
