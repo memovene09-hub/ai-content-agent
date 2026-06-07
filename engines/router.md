@@ -11,13 +11,23 @@ Las marcas declaran overrides en su `brands/{client}/formats.md` si lo necesitan
 
 | Tipo de pieza | Motor | Aspect ratio | Resolución / duración | Notas |
 |---|---|---|---|---|
-| imagen / foto / post | `nano_banana_pro` | hereda de formats.md | 2k | Default para piezas estáticas |
-| hero / banner | `nano_banana_pro` | 16:9 | 2k | Portadas, headers, thumbnails |
+| imagen / foto / post | `nano_banana_2` | hereda de formats.md | 1k | Default económico (1.5 créditos). Subir a 2k o `nano_banana_pro` solo para piezas finales/clave. |
+| hero / banner | `nano_banana_2` | 16:9 | 1k | Portadas, headers, thumbnails. Subir a 2k para uso impreso/grande. |
 | video / reel | `seedance_2_0` | hereda de formats.md | 720p, 4–15s, `mode=fast` | Default para video corto |
-| carrusel (cover) | `nano_banana_pro` | hereda de formats.md | 2k | Slide 1 con persona/escena; demás slides son HTML→PNG sin motor AI |
+| carrusel (cover) | `nano_banana_2` | hereda de formats.md | 1k | Slide 1 con persona/escena; demás slides son HTML→PNG sin motor AI |
 | carrusel (slides tipográficos) | `tools/render-slide.ps1` | hereda de formats.md | local | HTML + Edge headless, sin créditos AI |
 | infografía | `canva-brief` | n/a | n/a | NO genera raster. Devuelve brief estructurado en markdown para operador humano en Canva. |
 | character / soul training | `soul_2` | n/a | 5–20 referencias | Solo cuando se entrena un Soul Character reusable |
+
+### Tabla de costos (imagen, preflight con `get_cost`)
+
+| Motor | 1k | 2k | Cuándo usar |
+|---|---|---|---|
+| `nano_banana_2` | **1.5 cr** | 2 cr | Default. Pruebas y la mayoría de las piezas. |
+| `nano_banana_pro` | 2 cr | — | Solo cuando se necesita texto nítido/diagramas o calidad máxima. |
+
+**Regla de ahorro:** por defecto `nano_banana_2 @ 1k`. Subir resolución o cambiar a `pro`
+es una decisión explícita por pieza, confirmada con el usuario.
 
 ---
 
@@ -31,11 +41,19 @@ Las marcas declaran overrides en su `brands/{client}/formats.md` si lo necesitan
 
 ## Params por motor
 
-### nano_banana_pro
+### nano_banana_2 (default de imagen)
+```
+model: "nano_banana_2"
+aspect_ratio: "<de formats.md>"   # 4:5, 9:16, 1:1, 16:9, 21:9, etc.
+resolution: "1k"        # default económico; admite 1k/2k/4k
+medias: [ ... ]         # referencias (user_uploads + canonical_fallback)
+```
+
+### nano_banana_pro (opt-in, calidad máxima / texto-diagramas)
 ```
 model: "nano_banana_pro"
 aspect_ratio: "<de formats.md>"
-resolution: "2k"        # default; el modelo admite 1k/2k/4k
+resolution: "1k"        # admite 1k/2k/4k
 ```
 
 ### seedance_2_0
