@@ -1,40 +1,66 @@
 # AI Content Agent
 
-Agente que genera contenido (videos, imágenes e ideas) para clientes,
-manteniendo siempre la identidad de marca del cliente activo. Primer
-cliente: Claryon. Diseñado para escalar a más clientes sin modificar el agente.
+Agente multi-marca que genera contenido (imágenes, videos, carruseles, infografías)
+respetando la identidad de cada marca activa. Marcas iniciales: **Claryon** y **Bites**.
 
 ## Cómo usar
 
 1. Abre una sesión de Claude Code en este directorio.
-2. Indica el cliente activo: `"Cliente activo: claryon"`.
-3. Pide lo que necesitas:
-   - `"Genera un video de demo del agente de WhatsApp para LinkedIn"`
-   - `"Quiero una imagen para un post sobre automatización"`
-   - `"Dame 5 ideas de contenido para esta semana"`
+2. Indica la marca activa: `"Cliente activo: claryon"` o `"Cliente activo: bites"`.
+3. Pide lo que necesitas. Triggers en `MODES.json`:
+   - `"genera una imagen / hero / infografía de…"` → `generar-imagen`
+   - `"genera un video / reel de…"` → `generar-video`
+   - `"genera un carrusel de…"` → `generar-carrusel`
+   - `"guardar patrón [nombre]"` → `aprender-de-exito`
 
-El agente carga el brand.md del cliente, te muestra el prompt construido
-para aprobación, y ejecuta la generación.
+El agente carga `brands/{marca}/`, ensambla el prompt con los 6 bloques de
+`prompts/template-prompt-completo.md`, elige motor con `engines/router.md`,
+ejecuta, y entrega con status `pendiente de aprobación humana`.
 
-## Cómo agregar un cliente nuevo
+## Arquitectura
 
-1. Crea la carpeta `clients/{client-id}/`.
-2. Crea `clients/{client-id}/brand.md` — usa `clients/claryon/brand.md` como plantilla.
-3. En la próxima sesión, indica el nuevo cliente como activo.
+```
+CLAUDE.md                 ≤35 líneas — boot del agente
+MODES.json                modos + triggers + approval_gate
+compiled.json             artefacto compilado (NO editar a mano)
+tools/build-compiled.ps1  regenera compiled.json desde fuentes
 
-No se modifica ningún otro archivo del agente.
+brands/{marca}/
+  identity.md             ADN visual + voz + personajes
+  elements.json           manifest de Higgsfield elements
+  formats.md              specs por red social
+  successful-prompts.json patrones validados aprendidos en el tiempo
 
-## Skills disponibles
+engines/router.md         motor por tipo de pieza (agnóstico a marca)
+prompts/template-prompt-completo.md   plantilla obligatoria de 6 bloques
 
-| Lo que pides                            | Skill que se activa        |
-|-----------------------------------------|----------------------------|
-| "genera un video", "quiero un video"    | `skills/video-generation.md`  |
-| "genera una imagen", "quiero una imagen"| `skills/image-generation.md`  |
-| "dame ideas", "qué contenido hago"      | `skills/content-ideas.md`     |
+skills/                   todas ≤30 líneas, agnósticas a marca
+  generar-imagen.md
+  generar-video.md
+  generar-carrusel.md
+  aprender-de-exito.md
 
-## Herramientas requeridas
+templates/carousel/       HTML→PNG para slides tipográficos
+tools/render-slide.ps1    Edge headless render
+references/               logos del cliente y de marcas externas
+carruseles/               outputs históricos
+```
 
-- **Modelo**: claude-haiku-4-5-20251001
-- **MCP**: Higgsfield — `generate_video`, `generate_image`, `media_upload`,
-  `media_confirm`, `models_explore`
-- **Acceso**: sesión activa en claude.ai con Higgsfield conectado
+## Cómo agregar una marca
+
+1. Crea `brands/{nueva-marca}/{identity.md, elements.json, formats.md, successful-prompts.json}`.
+2. Coloca su logo en `references/{nueva-marca}-logo.png`.
+3. Regenera: `.\tools\build-compiled.ps1`.
+
+**No se modifica** `CLAUDE.md`, `MODES.json`, `engines/`, `prompts/` ni las `skills/`.
+
+## Reglas no negociables
+
+- Sin `brands/{marca}/identity.md`, no se construye prompt.
+- Un solo idioma por pieza. Nunca mezclar.
+- El agente NUNCA auto-publica. Aprobación humana explícita en el chat.
+- Prompts a motores AI siempre en inglés. Conversación con el usuario en español.
+
+## Modelo
+
+`claude-haiku-4-5-20251001`
