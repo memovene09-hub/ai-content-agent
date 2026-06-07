@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1080px; }
+  body {
+    background: #131f3c;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .stripe-left {
+    position: absolute;
+    left: 0; top: 0;
+    width: 54px; height: 100%;
+    background: #693f8c;
+  }
+  .label {
+    position: absolute;
+    top: 80px; left: 100px;
+    background: #693f8c;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 12px 22px;
+  }
+  .claim {
+    position: absolute;
+    top: 240px;
+    left: 100px;
+    right: 80px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 130px;
+    line-height: 1.02;
+    letter-spacing: -2px;
+    color: #ffffff;
+  }
+  .claim.size-md { font-size: 110px; }
+  .claim.size-sm { font-size: 92px; }
+  .brand-mark {
+    position: absolute;
+    bottom: 70px;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  .brand-mark img {
+    height: 48px;
+    width: auto;
+    display: block;
+  }
+  .brand-mark .wordmark {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 44px;
+    color: #693f8c;
+    letter-spacing: 1px;
+  }
+  .brand-logos-row {
+    position: absolute;
+    bottom: 70px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  .brand-logos-row img {
+    height: 56px;
+    width: auto;
+    display: block;
+    opacity: 0.95;
+  }
+</style>
+</head>
+<body>
+  <div class="stripe-left"></div>
+  <div class="label">{{LABEL_PUNTO}}</div>
+  <div class="claim {{CLAIM_SIZE_CLASS}}">{{CLAIM_HTML}}</div>
+  {{BRAND_LOGOS_ROW_HTML}}
+  <div class="brand-mark">{{BRAND_MARK_HTML}}</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1080px; }
+  body {
+    background: #131f3c url("{{COVER_BG_PATH}}") center / cover no-repeat;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .veil {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, rgba(19,31,60,0.92) 0%, rgba(19,31,60,0.55) 45%, rgba(19,31,60,0.18) 75%, rgba(19,31,60,0.18) 100%);
+  }
+  .top-mark {
+    position: absolute;
+    top: 60px; left: 70px;
+    z-index: 2;
+  }
+  .top-mark img {
+    height: 44px;
+    width: auto;
+    display: block;
+  }
+  .top-mark .wordmark {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  .headline {
+    position: absolute;
+    left: 70px;
+    right: 60%;
+    top: 240px;
+    z-index: 2;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 108px;
+    line-height: 1.02;
+    letter-spacing: -2px;
+    color: #ffffff;
+  }
+  .headline.size-md { font-size: 92px; }
+  .headline.size-sm { font-size: 78px; }
+  .rule {
+    position: absolute;
+    bottom: 100px;
+    left: 70px;
+    right: 70px;
+    height: 6px;
+    background: #693f8c;
+    z-index: 2;
+  }
+  .brand-logos-row {
+    position: absolute;
+    bottom: 130px;
+    left: 70px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    z-index: 2;
+  }
+  .brand-logos-row img {
+    height: 48px;
+    width: auto;
+    display: block;
+    opacity: 0.95;
+  }
+  .brand-logos-row .label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #bdb9d7;
+  }
+</style>
+</head>
+<body>
+  <div class="veil"></div>
+  <div class="top-mark">{{BRAND_MARK_HTML}}</div>
+  <div class="headline {{HEADLINE_SIZE_CLASS}}">{{HEADLINE_HTML}}</div>
+  {{BRAND_LOGOS_ROW_HTML}}
+  <div class="rule"></div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1080px; }
+  body {
+    background: #131f3c;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .label {
+    position: absolute;
+    top: 90px; left: 90px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #bdb9d7;
+  }
+  .top-brand-mark {
+    position: absolute;
+    top: 80px; right: 90px;
+  }
+  .top-brand-mark img { height: 44px; width: auto; display: block; }
+  .top-brand-mark .wordmark {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 38px;
+    color: #693f8c;
+    letter-spacing: 1px;
+  }
+  .cta {
+    position: absolute;
+    top: 280px;
+    left: 90px;
+    right: 90px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 1.02;
+    letter-spacing: -2px;
+    color: #ffffff;
+  }
+  .cta.size-md { font-size: 100px; }
+  .cta.size-sm { font-size: 84px; }
+  .rule {
+    position: absolute;
+    top: 600px;
+    left: 90px;
+    width: 240px;
+    height: 6px;
+    background: #693f8c;
+  }
+  .body-text {
+    position: absolute;
+    top: 640px;
+    left: 90px;
+    right: 90px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.4;
+    color: #bdb9d7;
+  }
+  .bottom-band {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 140px;
+    background: #693f8c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+  }
+  .bottom-band .handle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+  }
+  .bottom-band .action {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="label">{{LABEL_SIGUENOS}}</div>
+  <div class="top-brand-mark">{{BRAND_MARK_HTML}}</div>
+  <div class="cta {{CTA_SIZE_CLASS}}">{{CTA_HEADLINE_HTML}}</div>
+  <div class="rule"></div>
+  <div class="body-text">{{CTA_BODY_HTML}}</div>
+  <div class="bottom-band">
+    <div class="handle">{{HANDLE}}</div>
+    <div class="action">{{CTA_ACTION}}</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLARYON — Contenido Generado</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0a0a0a; color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; padding: 48px 40px 80px; }
+  .page-title { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #693f8c; margin-bottom: 48px; }
+  .story { margin-bottom: 64px; }
+  .story-meta { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px; }
+  .story-label { font-size: 10px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.18); margin-bottom: 6px; }
+  .story-date { font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 4px; }
+  .story-title { font-size: 13px; color: rgba(255,255,255,0.35); }
+  .download-all-btn { display: flex; align-items: center; gap: 7px; background: rgba(105,63,140,0.15); border: 1px solid #693f8c; color: #bdb9d7; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 9px 16px; border-radius: 7px; cursor: pointer; text-decoration: none; transition: background 0.15s, color 0.15s; flex-shrink: 0; }
+  .download-all-btn:hover { background: rgba(105,63,140,0.4); color: #fff; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  @media (max-width: 800px) { .row { grid-template-columns: repeat(2, 1fr); } }
+  .slide-wrap { display: flex; flex-direction: column; gap: 8px; }
+  .slide-wrap img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 12px; display: block; background: #131f3c; transition: transform 0.2s ease; }
+  .slide-wrap img:hover { transform: scale(1.03); }
+  .dl-btn { display: block; text-align: center; background: #131f3c; border: 1px solid rgba(105,63,140,0.4); color: #bdb9d7; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 8px; border-radius: 6px; text-decoration: none; transition: background 0.15s, color 0.15s, border-color 0.15s; }
+  .dl-btn:hover { background: #693f8c; border-color: #693f8c; color: #fff; }
+  hr.divider { border: none; border-top: 1px solid rgba(255,255,255,0.05); margin: 0 0 56px; }
+</style>
+</head>
+<body>
+
+<p class="page-title">CLARYON — Contenido Generado</p>
+
+<section class="story">
+  <div class="story-meta">
+    <div>
+      <p class="story-label">Story 01</p>
+      <p class="story-date">6 junio 2026</p>
+      <p class="story-title">Cómo un agente de WhatsApp reduce el tiempo de respuesta</p>
+    </div>
+    <a class="download-all-btn" href="#" onclick="downloadAll(1); return false;">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16l-6-6h4V4h4v6h4l-6 6zm-6 2h12v2H6z"/></svg>
+      Descargar todo
+    </a>
+  </div>
+
+  <div class="row">
+    <div class="slide-wrap">
+      <img src="carruseles/carrusel-1/slide1.png" alt="Slide 1 — Cover">
+      <a class="dl-btn" href="carruseles/carrusel-1/slide1.png" download="carrusel-1-slide1.png">Descargar</a>
+    </div>
+    <div class="slide-wrap">
+      <img src="carruseles/carrusel-1/slide2.png" alt="Slide 2 — El Punto">
+      <a class="dl-btn" href="carruseles/carrusel-1/slide2.png" download="carrusel-1-slide2.png">Descargar</a>
+    </div>
+    <div class="slide-wrap">
+      <img src="carruseles/carrusel-1/slide3.png" alt="Slide 3 — Por Qué Importa">
+      <a class="dl-btn" href="carruseles/carrusel-1/slide3.png" download="carrusel-1-slide3.png">Descargar</a>
+    </div>
+    <div class="slide-wrap">
+      <img src="carruseles/carrusel-1/slide4.png" alt="Slide 4 — Síguenos">
+      <a class="dl-btn" href="carruseles/carrusel-1/slide4.png" download="carrusel-1-slide4.png">Descargar</a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<script>
+  function downloadAll(n) {
+    [1, 2, 3, 4].forEach((s, i) => {
+      setTimeout(() => {
+        const a = document.createElement('a');
+        a.href = `carruseles/carrusel-${n}/slide${s}.png`;
+        a.download = `carrusel-${n}-slide${s}.png`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }, i * 300);
+    });
+  }
+</script>
+</body>
+</html>
