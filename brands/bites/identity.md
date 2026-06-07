@@ -1,61 +1,67 @@
 # Bites — Identity
 
-> **Estado:** placeholder estructural. Regina/Memo lo completan.
-
 ## Negocio
-[PENDIENTE — descripción del negocio Bites, propuesta de valor, audiencia]
+**Bites Snacks** — snacks y postres mexicanos para eventos y antojo.
+Carrito/puesto que sirve dulces enchilados (fruta y gomitas con chamoy) y
+mini-pancakes con toppings (chocolate, lechera, M&Ms). Se monta en eventos,
+parques y reuniones. Vibe alegre, fresco, para compartir.
+
+Contacto visible en el carrito: **@bitesnacks.mx** · tel. 3318803094.
+Audiencia: jóvenes y familias en México que buscan un antojo divertido para eventos.
 
 ## Voz de marca
-[PENDIENTE — completar]
-
-Provisional: divertida, ligera, juguetona, con energía nocturna.
-No corporativo, no formal, no aburrido.
+Divertida, ligera, juguetona. Cercana y antojadiza, nunca corporativa.
+Habla de "compartir", "antojo", "se te hace agua la boca". Emojis ok con mesura.
 
 ## Identidad visual
 
 ### Paleta
-- `#E63946` — rojo Bites (acento principal)
-- `#FFD60A` — amarillo Bites (acento secundario)
-- `#0B132B` — negro nocturno (fondo)
-- `#FFFFFF` — blanco (texto/contraste)
+- `#E2342B` — rojo Bites (acento principal, óvalo del logo, "SNACKS")
+- `#FBC219` — amarillo Bites (letras "BITES", acento secundario)
+- `#1A1A1A` — negro contorno (outline del logo, alto contraste)
+- `#FFFFFF` — blanco (fondos, vasito, carrito)
 
-> Valores aproximados — confirmar con guía oficial cuando llegue.
+> Valores aproximados del logo — confirmar con guía oficial cuando llegue.
 
 ### Iluminación y mood
-- **Luz nocturna cálida** — tonos cálidos sobre fondos oscuros, neón sutil rojo/amarillo.
-- **Mood juguetón, divertido, energético** — sin caer en infantil ni gritón.
-- Sensación de antojo nocturno, vida urbana, comer rico tarde.
-- **No usar:** estética corporativa, paleta fría, mood sereno, iluminación de oficina,
-  composiciones rígidas, fondos blancos planos.
+- **Luz natural de día, brillante** — exterior, parques, eventos al aire libre.
+- Cielo claro, pasto verde, sombras suaves de sol.
+- **Mood juguetón, fresco, antojadizo, familiar** — alegría de compartir.
+- Producto apetitoso y colorido como héroe de la toma.
+- **No usar:** estética nocturna/neón, fondos oscuros, mood serio o corporativo,
+  iluminación de estudio fría, comida poco apetitosa.
 
 ### Composición
-- Encuadres cercanos al producto (close-up apetitoso).
-- Composiciones dinámicas, contrapicado o picado para drama.
-- Negative space cálido (no vacío frío).
+- Close-up apetitoso del producto (vasito o charolita en mano).
+- Producto al centro o tercio dominante, fondo natural exterior desenfocado.
+- Encuadres frescos, dinámicos; manos sosteniendo el producto está bien.
 
 ### Tipografía
 [PENDIENTE — confirmar fuentes oficiales]
 
-Provisional para templates: sans bold para impacto + serif para acentos editoriales.
+El wordmark del logo es bubble/cartoon bold amarillo con contorno negro.
+Provisional para apoyos: sans-serif redondeada y bold.
 
 ### Logo
-[PENDIENTE — colocar archivo en references/bites-logo.png]
+Archivo: `brands/bites/references/bites-logo.jpeg`.
+Boca caricaturesca (óvalo rojo + dientes) con "BITES" amarillo y "SNACKS" rojo.
+Fondo blanco; idealmente conseguir versión PNG transparente.
 
 ## Idioma por defecto
-Español (México).
+Español (México). **Un solo idioma por pieza, nunca mezclar.**
 
 ## Tipos de contenido prioritarios
-[PENDIENTE — Regina/Memo definen]
-
-Provisional:
-- Producto en escena nocturna apetitosa.
-- Lifestyle / momento de antojo.
-- Promos visuales con energía.
+- **Producto héroe** — vasito de dulces enchilados o mini-pancakes en close-up apetitoso.
+- **Carrito en evento** — el puesto montado, sensación de lugar y ocasión.
+- **Momento de antojo / compartir** — manos, gente disfrutando, ambiente de día.
+- **Promos** — anuncios visuales de menú, precios, fechas de eventos.
 
 ## Plataformas objetivo
-Instagram (principal — visual, antojo, dinámica), TikTok (secundario, reels).
+Instagram (principal — visual, antojo) · TikTok (secundario, reels de armado).
 
 ---
 
 ## Personaje visible
-[PENDIENTE — definir si hay vocero/a recurrente o si la comida es la protagonista]
+Ninguno. **La comida es la protagonista.** El foco es el producto (vasito,
+mini-pancakes) y el carrito. Manos sosteniendo el producto están permitidas,
+sin rostro recurrente ni vocero fijo.

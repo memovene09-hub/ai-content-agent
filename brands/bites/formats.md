@@ -7,7 +7,7 @@
 | aspect_ratio | 4:5 |
 | dimensiones | 1080 × 1350 |
 | usos | Post estático, producto en escena, hero |
-| encuadre | Producto al centro o tercio dominante, fondo nocturno con acentos cálidos |
+| encuadre | Producto al centro o tercio dominante, fondo natural exterior desenfocado, luz de día |
 
 ## Historia (Instagram Stories)
 

@@ -6,40 +6,40 @@
       "nombre": "bites-logo",
       "tipo": "logo",
       "tags": ["logo", "marca", "bites"],
-      "cuando_usar": "Como overlay de marca en cualquier pieza, watermark, o referencia visual para que el motor mantenga la identidad.",
-      "descripcion": "Logo principal de Bites en PNG transparente. Pendiente de subir a Higgsfield y registrar ID."
+      "cuando_usar": "Como overlay de marca, watermark o referencia para que el motor respete la identidad. Archivo local: brands/bites/references/bites-logo.jpeg.",
+      "descripcion": "Logo Bites Snacks: boca caricaturesca (óvalo rojo + dientes blancos) con 'BITES' en amarillo bubble y 'SNACKS' en rojo. Fondo blanco; conviene versión PNG transparente."
     },
     {
       "higgsfield_id": "PENDIENTE",
       "nombre": "bites-vasito",
       "tipo": "producto",
-      "tags": ["producto", "vasito", "packaging", "to-go"],
-      "cuando_usar": "Cuando la pieza muestra el producto en vasito (formato individual to-go). Bueno para close-ups apetitosos y escenas nocturnas con producto en mano.",
-      "descripcion": "El vasito Bites — packaging individual de la marca. Referencia visual para que el motor reproduzca el packaging correctamente."
-    },
-    {
-      "higgsfield_id": "PENDIENTE",
-      "nombre": "bites-carrito",
-      "tipo": "set",
-      "tags": ["carrito", "puesto", "calle", "noche", "ambiente"],
-      "cuando_usar": "Cuando la pieza muestra el carrito/puesto de Bites en escena. Útil para hero shots, ambientación nocturna urbana, sensación de lugar.",
-      "descripcion": "El carrito o puesto Bites — el set físico donde se sirve. Múltiples ángulos disponibles localmente (frente, arriba) en brands/bites/references/."
+      "tags": ["producto", "vasito", "dulces-enchilados", "chamoy", "fruta", "antojo"],
+      "cuando_usar": "Pieza donde el héroe es el vasito de dulces enchilados (fruta y gomitas con chamoy). Ideal para close-ups apetitosos y producto en mano. Archivo: brands/bites/references/bites-vasito.jpeg.",
+      "descripcion": "Vasito blanco con logo Bites lleno de dulces enchilados: fruta, gomitas y chamoy, con cuchara. El producto estrella de día/evento."
     },
     {
       "higgsfield_id": "PENDIENTE",
       "nombre": "bites-minipancakes",
       "tipo": "producto",
-      "tags": ["producto", "minipancakes", "pancakes", "comida", "antojo"],
-      "cuando_usar": "Cuando la pieza muestra el producto mini-pancakes de Bites. Útil para close-ups apetitosos, hero shots de producto, escenas de armado.",
-      "descripcion": "Mini-pancakes Bites — uno de los productos estrella. Referencia visual para que el motor reproduzca el producto correctamente."
+      "tags": ["producto", "minipancakes", "pancakes", "postre", "chocolate", "antojo"],
+      "cuando_usar": "Pieza donde el héroe son los mini-pancakes con toppings (chocolate, lechera, M&Ms). Close-ups apetitosos, hero de producto, escenas de armado. Archivo: brands/bites/references/bites-minipancakes.jpeg.",
+      "descripcion": "Charolita de mini-pancakes con chispas de chocolate, lechera, salsa de chocolate y M&Ms. Postre estrella servido en evento."
     },
     {
       "higgsfield_id": "PENDIENTE",
-      "nombre": "bites-estilo-noche",
+      "nombre": "bites-carrito",
+      "tipo": "set",
+      "tags": ["carrito", "puesto", "evento", "exterior", "dia", "ambiente"],
+      "cuando_usar": "Pieza que muestra el carrito/puesto montado en evento. Hero shots de lugar, ambientación diurna exterior, sensación de ocasión. Múltiples ángulos en brands/bites/references/ (frente, arriba).",
+      "descripcion": "Carrito blanco de Bites montado en exterior (pasto, muro claro), con logo al frente, flores y producto sobre la barra. Vibe de evento diurno."
+    },
+    {
+      "higgsfield_id": "PENDIENTE",
+      "nombre": "bites-estilo",
       "tipo": "estilo",
-      "tags": ["estilo", "noche", "luz-calida", "neon", "mood"],
-      "cuando_usar": "Como style reference en cualquier pieza para forzar el mood nocturno cálido con acentos neón rojo/amarillo.",
-      "descripcion": "Pieza de referencia que captura la estética nocturna Bites: luz cálida, neón sutil rojo y amarillo, fondos oscuros, vibe urbano de antojo."
+      "tags": ["estilo", "dia", "luz-natural", "exterior", "fresco", "mood"],
+      "cuando_usar": "Como style reference para forzar el mood diurno brillante de Bites: luz natural de día, exterior, fondos claros, vibe alegre y antojadizo.",
+      "descripcion": "Referencia de estética Bites: luz natural de día, escenas al aire libre (parque/evento), colores frescos y apetitosos, fondos claros desenfocados, alegría de compartir."
     }
   ]
 }

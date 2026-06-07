@@ -24,6 +24,7 @@ $compiled = [ordered]@{
     model         = "claude-haiku-4-5-20251001"
     system_prompt = Read-Text "CLAUDE.md"
     modes         = (Read-Json "MODES.json").modes
+    helpers       = (Read-Json "MODES.json").helpers
     global        = (Read-Json "MODES.json").global
     skills        = [ordered]@{}
     engines       = [ordered]@{}

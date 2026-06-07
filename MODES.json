@@ -58,6 +58,13 @@
       "approval_gate": "n/a"
     }
   },
+  "helpers": {
+    "analizar-inspiracion": {
+      "skill": "skills/analizar-inspiracion.md",
+      "description": "Helper interno (no se gatilla por el usuario). Recibe UNA imagen y devuelve sus rasgos visuales en JSON. Lo invocan las skills de generación cuando hay imagen de inspiración.",
+      "invoked_by": ["generar-imagen", "generar-video", "generar-carrusel"]
+    }
+  },
   "global": {
     "language": "es",
     "approval_gate": "humano — el agente NUNCA auto-publica",
