@@ -1,0 +1,67 @@
+{
+  "version": "0.2.0",
+  "modes": {
+    "generar-imagen": {
+      "skill": "skills/generar-imagen.md",
+      "triggers": [
+        "genera una imagen",
+        "quiero una imagen",
+        "imagen de",
+        "imagen para",
+        "post estático",
+        "hero",
+        "infografía",
+        "foto de"
+      ],
+      "description": "Genera una pieza estática AI o un brief para Canva, respetando identidad de marca.",
+      "outputs": ["png", "canva-brief.md"],
+      "approval_gate": "humano"
+    },
+    "generar-video": {
+      "skill": "skills/generar-video.md",
+      "triggers": [
+        "genera un video",
+        "quiero un video",
+        "reel de",
+        "video de",
+        "story de",
+        "demo de"
+      ],
+      "description": "Genera un video corto (reel / story / demo) respetando identidad de marca.",
+      "outputs": ["mp4"],
+      "approval_gate": "humano"
+    },
+    "generar-carrusel": {
+      "skill": "skills/generar-carrusel.md",
+      "triggers": [
+        "genera un carrusel",
+        "quiero un carrusel",
+        "carrusel de",
+        "carrusel para",
+        "slides para"
+      ],
+      "description": "Genera un carrusel multi-slide: cover AI + slides tipográficos HTML→PNG.",
+      "outputs": ["png x N", "index.html"],
+      "approval_gate": "humano"
+    },
+    "aprender-de-exito": {
+      "skill": "skills/aprender-de-exito.md",
+      "triggers": [
+        "guardar patrón",
+        "guarda este patrón",
+        "este funcionó",
+        "recuerda este prompt",
+        "guarda lo que funcionó"
+      ],
+      "description": "Captura un prompt/pattern exitoso para reusarlo en futuras generaciones.",
+      "outputs": ["brands/{client_id}/successful-prompts.json"],
+      "approval_gate": "n/a"
+    }
+  },
+  "global": {
+    "language": "es",
+    "approval_gate": "humano — el agente NUNCA auto-publica",
+    "brand_required": true,
+    "brand_resolver": "El usuario nombra la marca, o el agente la infiere del contexto. Carga obligatoria de brands/{client_id}/identity.md antes de cualquier modo de generación."
+  }
+}
