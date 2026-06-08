@@ -2,6 +2,16 @@
 # Higgsfield conserva el historial completo en la nube de todas formas.
 outputs/**/_descartes/
 
+# Staging: las generaciones nuevas viven en outputs/{client_id}/ (raíz) hasta
+# que se aprueban (→ aprobadas/) o se descartan (→ _descartes/). Mientras
+# están sin decidir se quedan locales — solo aprobadas/ entra al repo.
+outputs/*/*.png
+outputs/*/*.jpg
+outputs/*/*.jpeg
+outputs/*/*.webp
+outputs/*/*.mp4
+outputs/*/*.gif
+
 # Workspaces temporales de render de carrusel
 carruseles/**/_render/
 
