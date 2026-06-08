@@ -14,5 +14,25 @@
     "aprobado_por": "string — quién aprobó",
     "fecha": "ISO date"
   },
-  "patrones_exitosos": []
+  "patrones_exitosos": [
+    {
+      "id": "vasito-heroe-estadio",
+      "proposito": "Producto Bites como héroe monumental en un estadio deportivo, ángulo bajo y luz dramática. Sirve para piezas de game-day, Mundial, eventos deportivos.",
+      "tipo_pieza": "imagen",
+      "formato": "post 4:5 (1080x1350)",
+      "elementos_usados": ["bites-vasito (referencia de producto, define forma/logo/contenido)", "fondo de estadio como segunda referencia (ej. inspo-fondofutbol para fútbol, o estadio NFL)"],
+      "constraints": [
+        "CRÍTICO: respetar la forma y proporción REAL del vasito (corto y ancho tipo nieve), nunca alargarlo",
+        "CRÍTICO: no agregar elementos no pedidos ni ausentes de las referencias (sin cuchara, balón, banderas, props extra)",
+        "ángulo héroe bajo, ligeramente hacia arriba, producto centrado llenando el tercio central",
+        "swap de fondo limpio: el producto se conserva idéntico y solo cambia el escenario"
+      ],
+      "tone": "luz dramática de estadio (reflectores, rim light frío, glow cálido de atardecer), gotas de frescura, fotografía comercial premium glossy, vibrante y apetitoso",
+      "modelo": "nano_banana_2 @ 1k (1.5 cr)",
+      "tags": ["bites", "vasito", "estadio", "deportivo", "futbol", "mundial", "nfl", "game-day", "producto-heroe", "angulo-bajo"],
+      "prompt_plantilla": "ESCENA: A single Bites Snacks cup standing as the hero product at the center of {ESCENARIO_DEPORTIVO}, filled and mounded with colorful Mexican chamoy snacks, glistening. CRITICAL PRODUCT FIDELITY: reproduce the cup with the EXACT shape and proportions of the product reference — a SHORT, WIDE round white snack cup with the Bites cartoon-mouth logo; never elongate or stretch it. COMPOSICION: vertical 4:5, low slightly-upward hero angle, cup centered; foreground {SUPERFICIE}, background {FONDO_ESTADIO} blurred with floodlights and dramatic dusk sky. TECNICO: dramatic stadium floodlighting, cool rim light, warm horizon backlight, fresh condensation droplets, shallow depth of field, sharp focus on product. AVOID: do not add any element not in the references (no spoon, no ball, no flags, no confetti, no extra props, no people); do not change the cup shape or proportions; no soda can, no external brand, no distorted text, no fake logos, no AI artifacts, no watermark.",
+      "aprobado_por": "humano",
+      "fecha": "2026-06-07"
+    }
+  ]
 }
