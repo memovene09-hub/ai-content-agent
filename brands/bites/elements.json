@@ -6,7 +6,7 @@
       "nombre": "bites-logo",
       "tipo": "logo",
       "tags": ["logo", "marca", "bites"],
-      "cuando_usar": "Como overlay de marca, watermark o referencia para que el motor respete la identidad. Archivo local: brands/bites/references/bites-logo.jpeg.",
+      "cuando_usar": "Como overlay de marca, watermark o referencia para que el motor respete la identidad. Archivo local: brands/bites/references/identidad/bites-logo.jpeg.",
       "descripcion": "Logo Bites Snacks: boca caricaturesca (óvalo rojo + dientes blancos) con 'BITES' en amarillo bubble y 'SNACKS' en rojo. Fondo blanco; conviene versión PNG transparente."
     },
     {
@@ -14,7 +14,7 @@
       "nombre": "bites-vasito",
       "tipo": "producto",
       "tags": ["producto", "vasito", "dulces-enchilados", "chamoy", "fruta", "antojo"],
-      "cuando_usar": "Pieza donde el héroe es el vasito de dulces enchilados (fruta y gomitas con chamoy). Ideal para close-ups apetitosos y producto en mano. Archivo: brands/bites/references/bites-vasito.jpeg.",
+      "cuando_usar": "Pieza donde el héroe es el vasito de dulces enchilados (fruta y gomitas con chamoy). Ideal para close-ups apetitosos y producto en mano. Archivo: brands/bites/references/identidad/bites-vasito.jpeg.",
       "descripcion": "Vasito blanco con logo Bites lleno de dulces enchilados: fruta, gomitas y chamoy, con cuchara. El producto estrella de día/evento.",
       "proporcion": "Cup CORTO y ANCHO (tipo nieve/frozen-yogurt): el diámetro del borde superior es aprox. igual a la altura del vaso, con ligera conicidad hacia una base un poco más angosta. NUNCA alargarlo ni hacerlo tipo vaso de refresco. Respetar la geometría exacta de la foto."
     },
@@ -23,7 +23,7 @@
       "nombre": "bites-minipancakes",
       "tipo": "producto",
       "tags": ["producto", "minipancakes", "pancakes", "postre", "chocolate", "antojo"],
-      "cuando_usar": "Pieza donde el héroe son los mini-pancakes con toppings (chocolate, lechera, M&Ms). Close-ups apetitosos, hero de producto, escenas de armado. Archivo: brands/bites/references/bites-minipancakes.jpeg.",
+      "cuando_usar": "Pieza donde el héroe son los mini-pancakes con toppings (chocolate, lechera, M&Ms). Close-ups apetitosos, hero de producto, escenas de armado. Archivo: brands/bites/references/identidad/bites-minipancakes.jpeg.",
       "descripcion": "Charolita de mini-pancakes con chispas de chocolate, lechera, salsa de chocolate y M&Ms. Postre estrella servido en evento."
     },
     {
@@ -31,7 +31,7 @@
       "nombre": "bites-carrito",
       "tipo": "set",
       "tags": ["carrito", "puesto", "evento", "exterior", "dia", "ambiente"],
-      "cuando_usar": "Pieza que muestra el carrito/puesto montado en evento. Hero shots de lugar, ambientación diurna exterior, sensación de ocasión. Múltiples ángulos en brands/bites/references/ (frente, arriba).",
+      "cuando_usar": "Pieza que muestra el carrito/puesto montado en evento. Hero shots de lugar, ambientación diurna exterior, sensación de ocasión. Múltiples ángulos en brands/bites/references/identidad/ (frente, arriba).",
       "descripcion": "Carrito blanco de Bites montado en exterior (pasto, muro claro), con logo al frente, flores y producto sobre la barra. Vibe de evento diurno."
     },
     {

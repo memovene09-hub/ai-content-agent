@@ -1,30 +1,35 @@
-# Claryon — Canonical References
+# Claryon — References
 
-Archivos PNG/JPG/MP4 que sirven como referencias visuales canónicas de la marca
-para los motores de generación (Higgsfield principalmente).
+Dos subcarpetas según el tipo de imagen:
 
-## Convención de nombres
+```
+references/
+├── identidad/   ← imágenes FIJAS de marca: logo, iso, paleta, personaje (canónicas)
+└── inspo/       ← imágenes de INSPIRACIÓN: vibra, composición, escenas puntuales
+```
 
-El archivo se llama igual que el `nombre` del element en `brands/claryon/elements.json`:
+## identidad/ — imágenes fijas (canónicas)
+
+Lo que define visualmente a Claryon y se reutiliza siempre. Cada element de
+`elements.json` apunta aquí. Convención: `{nombre}.{ext}` primario,
+`{nombre}-{descriptor}.{ext}` variantes.
 
 | Element (`nombre`) | Archivo esperado |
 |---|---|
-| claryon-logo | claryon-logo.png |
-| claryon-iso | claryon-iso.png |
-| claryon-paleta | claryon-paleta.png |
+| claryon-logo | identidad/claryon-logo.png |
+| claryon-iso | identidad/claryon-iso.png |
+| claryon-paleta | identidad/claryon-paleta.png |
 
-## Cuándo se usan
+> Pendiente colocar archivos. Nota: el logo para overlays HTML de carrusel vive
+> aparte en `references/claryon-logo.png` (raíz); estos son para uploads a Higgsfield.
 
-Las skills `generar-imagen` / `generar-video` / `generar-carrusel` priorizan
-las imágenes que el usuario anexa en el chat (`user_uploads`). Solo si un rol
-requerido NO está cubierto por el upload del usuario, suben este archivo a
-Higgsfield (vía `media_upload` + `media_confirm`) como `canonical_fallback`.
+## inspo/ — imágenes de inspiración
 
-## Distinción con `references/` (raíz del proyecto)
+Referencias de estilo/composición/escena. Se pasan por nombre en el brief.
+_Vacío por ahora._
 
-- `references/{client}-logo.png` (raíz) — uso por **templates HTML** de carrusel
-  (overlays renderizados con Edge headless). Path embebido directo.
-- `brands/{client}/references/{nombre}.png` — uso por **motores AI** vía
-  upload a Higgsfield. El skill resuelve el path en runtime.
+## Cómo se usan
 
-Ambos pueden coexistir; el archivo puede ser el mismo en ambos lugares si conviene.
+`generar-*` prioriza uploads ad-hoc del chat. Para gaps usa las canónicas de
+`identidad/`. Las de `inspo/` se usan como referencia de estilo/composición
+cuando el brief las menciona.

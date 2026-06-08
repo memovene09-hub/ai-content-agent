@@ -1,30 +1,40 @@
-# Bites — Canonical References
+# Bites — References
 
-Archivos PNG/JPG/MP4 que sirven como referencias visuales canónicas de Bites
-para los motores de generación.
+Dos subcarpetas según el tipo de imagen:
 
-## Convención de nombres
+```
+references/
+├── identidad/   ← imágenes FIJAS de marca: logo, productos, sets (canónicas)
+└── inspo/       ← imágenes de INSPIRACIÓN: vibra, composición, fondos puntuales
+```
 
-Un element puede tener uno o más archivos de referencia:
+## identidad/ — imágenes fijas (canónicas)
 
-- **Archivo primario:** `{nombre}.{ext}` (ej. `bites-vasito.jpeg`)
-- **Variantes adicionales:** `{nombre}-{descriptor}.{ext}` (ej. `bites-carrito-frente.jpeg`)
+Lo que define visualmente a Bites y se reutiliza siempre. Cada element de
+`elements.json` apunta aquí. Convención de nombres: `{nombre}.{ext}` primario,
+`{nombre}-{descriptor}.{ext}` variantes.
 
-El skill toma todos los archivos cuyo nombre empieza con `{nombre}` y elige
-cuál subir según el contexto del brief (ej. si pide vista frontal, prefiere `*-frente`).
-
-## Inventario actual
-
-| Element (`nombre`) | Archivos |
+| Element (`nombre`) | Archivos en identidad/ |
 |---|---|
 | bites-logo | bites-logo.jpeg ✓ |
 | bites-vasito | bites-vasito.jpeg ✓ |
 | bites-minipancakes | bites-minipancakes.jpeg ✓ |
 | bites-carrito | bites-carrito-frente.jpeg, bites-carrito-frente2.jpeg, bites-carrito-arriba.jpeg ✓ |
-| bites-estilo | _usa cualquiera de las de arriba como ref de mood_ |
+| bites-estilo | usa cualquiera de identidad/ como ref de mood |
 
-## Cuándo se usan
+## inspo/ — imágenes de inspiración
 
-Las skills priorizan los uploads ad-hoc del usuario (`user_uploads`). Solo si un
-rol requerido no está cubierto por el upload, el skill sube el archivo canónico
-a Higgsfield (`media_upload` + `media_confirm`) como `canonical_fallback`.
+Referencias de estilo/composición/fondo, no necesariamente de la marca.
+Se pasan por nombre en el brief (ej. "usa el fondo inspo-fondofutbol").
+
+| Archivo | Uso |
+|---|---|
+| inspo-fondofutbol.jpeg | Fondo de estadio de fútbol (composición/escenario) |
+| inspo-mundial.jpeg | Referencia de composición/ángulo (lata poppi en estadio) |
+
+## Cómo se usan
+
+`generar-*` prioriza los uploads ad-hoc del chat (`user_uploads`). Para gaps usa
+las canónicas de `identidad/` (`canonical_fallback`). Las de `inspo/` se usan como
+referencia de estilo/composición cuando el brief las menciona. Higgsfield conserva
+el historial completo de generaciones en la nube.
