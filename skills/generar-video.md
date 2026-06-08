@@ -13,8 +13,8 @@ Agnóstico a marca.
 4. Buscar patrones en `successful-prompts.json` por tags; embeber constraints validados en `ESTILO` / `EVITAR`.
 5. Ensamblar prompt con `prompts/template-prompt-completo.md`. En `ESCENA` describir acción + cámara + ritmo. En `TÉCNICO` agregar movimiento de cámara y duración. `REFERENCIAS` lista `<<<UUID>>>` por media.
 6. Mostrar prompt + `medias[]` + params al usuario y esperar aprobación.
-7. Llamar `generate_video` con prompt + `medias[]`. Polling hasta `completed`. Descargar a disco. Entregar paths con status `pendiente de aprobación humana`.
-8. NUNCA auto-publicar.
+7. Llamar `generate_video` con prompt + `medias[]`. Polling hasta `completed`. Descargar a `outputs/{client_id}/_descartes/`. Entregar con status `pendiente de aprobación humana`.
+8. Al aprobar el usuario: mover a `outputs/{client_id}/aprobadas/`. NUNCA auto-publicar. Ver `outputs/README.md`.
 
 ## Reglas
 - Si la duración pedida sale del rango del motor, advertir y pedir confirmación.

@@ -1,0 +1,10 @@
+# Descartes de generación — se quedan en disco local, fuera del repo.
+# Higgsfield conserva el historial completo en la nube de todas formas.
+outputs/**/_descartes/
+
+# Workspaces temporales de render de carrusel
+carruseles/**/_render/
+
+# Junk del SO
+Thumbs.db
+.DS_Store
