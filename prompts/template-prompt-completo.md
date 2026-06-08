@@ -49,6 +49,9 @@ Negaciones explícitas:
 - `no deformed or readable text, no fake logos, no extra fingers`
 - `no AI artifacts, no oversaturated colors`
 - `no stock photo aesthetic`
+- **No agregar elementos no solicitados ni ausentes de las referencias/brief**
+  (props, utensilios, objetos, personas, texto, adornos). Si el usuario no lo pidió
+  y no está en una referencia, NO va. Ante la duda, omitir.
 - + las restricciones específicas de la marca (de identity.md → "Qué NO debe aparecer")
 
 ---
