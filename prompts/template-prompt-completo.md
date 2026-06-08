@@ -28,6 +28,13 @@ en formato `<<<higgsfield_id>>>`. El skill elige qué elements aplican según el
 de pieza y los tags relevantes al brief. Si todos están PENDIENTE, dejar el bloque
 explícitamente vacío con la nota `[no references registered yet]` — NO inventar IDs.
 
+**Fidelidad de producto (regla dura):** cuando una referencia es un producto real,
+reproducir su **forma, geometría y proporción EXACTAS** tal como aparecen en la imagen.
+Nunca estirar, alargar, ensanchar ni reinterpretar la silueta del producto. Si la
+escena cambia (fondo/ángulo), el producto conserva su proporción real. Declararlo
+explícitamente en `ESCENA` (ej. "reproduce the cup with the exact shape and proportions
+of the reference") y reforzarlo en `EVITAR`.
+
 ### 4. COMPOSICIÓN
 Aspect ratio + reglas de encuadre del `brands/{client}/formats.md` para el tipo
 elegido. Incluir explícitamente "1080x1350, 4:5 vertical" (o el que corresponda)

@@ -15,7 +15,8 @@
       "tipo": "producto",
       "tags": ["producto", "vasito", "dulces-enchilados", "chamoy", "fruta", "antojo"],
       "cuando_usar": "Pieza donde el héroe es el vasito de dulces enchilados (fruta y gomitas con chamoy). Ideal para close-ups apetitosos y producto en mano. Archivo: brands/bites/references/bites-vasito.jpeg.",
-      "descripcion": "Vasito blanco con logo Bites lleno de dulces enchilados: fruta, gomitas y chamoy, con cuchara. El producto estrella de día/evento."
+      "descripcion": "Vasito blanco con logo Bites lleno de dulces enchilados: fruta, gomitas y chamoy, con cuchara. El producto estrella de día/evento.",
+      "proporcion": "Cup CORTO y ANCHO (tipo nieve/frozen-yogurt): el diámetro del borde superior es aprox. igual a la altura del vaso, con ligera conicidad hacia una base un poco más angosta. NUNCA alargarlo ni hacerlo tipo vaso de refresco. Respetar la geometría exacta de la foto."
     },
     {
       "higgsfield_id": "PENDIENTE",
