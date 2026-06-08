@@ -5,6 +5,10 @@ outputs/**/_descartes/
 # Workspaces temporales de render de carrusel
 carruseles/**/_render/
 
+# Galería autocontenida (pesada, regenerable con tools/build-galeria.ps1) + previews
+outputs/**/galeria-*.html
+outputs/**/_galeria-preview.png
+
 # Junk del SO
 Thumbs.db
 .DS_Store
