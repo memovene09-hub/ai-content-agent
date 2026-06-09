@@ -69,6 +69,21 @@ LinkedIn (principal, autoridad) e Instagram (visual, impacto rápido).
 
 ---
 
+## Motor de generación
+
+**Higgsfield Basic** es el motor principal de generación visual para esta marca.
+
+- **Aplicable a:** demos de agentes, casos educativos, thought leadership.
+- **Output adaptable por plataforma:** LinkedIn carrusel, Instagram post, Instagram story, etc. La pieza se ajusta al formato destino sin perder identidad.
+- **Flujo de trabajo:**
+  1. Brief (schema definido abajo) + `identity.md`
+  2. Skill ensambla los 6 bloques del template y los envía a Higgsfield
+  3. Asset final → staging en `outputs/claryon/` → aprobación humana explícita
+
+Si el brief especifica otro motor por excepción (ej. video pesado), se documenta en `formats.md` como override.
+
+---
+
 ## Personaje visible: Valeria Cruz
 
 Mexicana, ~30 años. Ingeniera en sistemas reconvertida a IA aplicada.
@@ -122,8 +137,58 @@ modern professional aesthetic, photorealistic, NOT a stock photo.
 Estado: PENDIENTE. Cuando haya 5–10 generaciones aprobadas de Valeria,
 se entrena un Soul Character. Mientras tanto el prompt base garantiza ~85% de consistencia.
 
-### Cuándo aparece
-**Sí:** thought leadership, demos donde "se muestra trabajando", casos de éxito narrados, contenido educativo donde explica.
-**No:** tipografía pura, anuncios de producto sin narrador, comparativas técnicas, infografías puras.
+### Valeria — aparición
 
-Default LinkedIn: aparece. Default Instagram visual rápido: opcional.
+| Frecuencia | Tipos de contenido |
+|---|---|
+| **MAYORÍA** (aparece por defecto) | thought leadership, demos de agentes, casos narrados |
+| **OPCIONAL** (solo si humaniza sin meter ruido) | educativo / infografía |
+| **NUNCA** | tipografía pura, comparativas técnicas |
+
+**Regla de decisión:** antes de incluirla, evalúa si su presencia *suma* (humaniza, da autoridad, narra) o *distrae* (compite con datos, sobrecarga la composición). Si distrae, usa solo gráficos / tipografía.
+
+---
+
+## Sistema de briefs & iteración
+
+### Schema de brief (input al agente)
+Todo trabajo de generación parte de un brief con esta forma:
+
+```json
+{
+  "tipo_contenido": "educativo | caso | demo | thought-leadership",
+  "plataforma": "linkedin | instagram-post | instagram-story",
+  "incluir_valeria": true,
+  "copy": "texto exacto o estructura del mensaje",
+  "visual_mood": "cinematográfico oscuro | datos clean | demo en acción",
+  "paleta_override": "opcional — solo si se cambia el default navy+morado"
+}
+```
+
+`incluir_valeria` respeta la tabla de aparición de arriba. `paleta_override` se usa con cautela y solo cuando la pieza lo justifica.
+
+### Schema de `successful-prompts.json` (aprender de éxitos)
+Cada pieza aprobada se registra para retroalimentar futuras generaciones:
+
+```json
+{
+  "id": "unique-id",
+  "tipo_contenido": "educativo | caso | demo | thought-leadership",
+  "copy_estructura": "patrón del copy que funcionó",
+  "valeria_contexto": "cómo apareció (o por qué no apareció)",
+  "constraints_clave": ["restricciones que fueron decisivas"],
+  "engagement_resultado": "métrica / observación cualitativa",
+  "fecha_aprobacion": "YYYY-MM-DD"
+}
+```
+
+---
+
+## Aplicación por tipo
+
+| Tipo | Visual core | Valeria | Mood / paleta |
+|---|---|---|---|
+| **Demos de agentes** | Valeria *working*, flujo del agente visible, resultado claro y tangible | Sí | Dark mood, cinematográfico |
+| **Casos de éxito** | Before / after visual, datos cuantitativos del impacto | Opcional | Cinematográfico o datos clean |
+| **Educativo** | Concepto → ejemplo real → CTA. Tipografía clara, jerarquía fuerte | Opcional | Datos clean, paleta marca |
+| **Thought leadership** | Valeria pensando o explicando, claim grande, composición editorial | Sí | Cinematográfico oscuro |
