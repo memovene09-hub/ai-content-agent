@@ -22,6 +22,10 @@ Cada modo carga su skill en `skills/` y ejecuta su flujo.
   de `brands/{client_id}/formats.md`.
 - **El agente NUNCA auto-publica.** Cada salida llega con status
   `pendiente de aprobación humana`. La aprobación es explícita en el chat.
+- **Flujo de outputs:** cada generación nueva nace en la raíz de
+  `outputs/{client_id}/` (staging, sin decisión). Al aprobar se mueve a
+  `aprobadas/`; al descartar o pedir cambios, a `descartes/`. Detalle en
+  `outputs/README.md`.
 - Conversación en español. Prompts a motores AI van en inglés.
 
 ## Cómo agregar una marca

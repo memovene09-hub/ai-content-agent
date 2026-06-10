@@ -20,8 +20,8 @@ Agnóstico a marca.
 6. Buscar patrones en `successful-prompts.json` cuyos tags casen con el brief; embeber `constraints` en `ESTILO`/`EVITAR` con nota `based on successful patterns:`.
 7. Ensamblar prompt con `prompts/template-prompt-completo.md` (6 bloques completos). `REFERENCIAS` lista `<<<UUID>>>` por cada media.
 8. Mostrar prompt + `medias[]` + params al usuario. Esperar aprobación explícita.
-9. Llamar `generate_image` con prompt + `medias[]`. Descargar a `outputs/{client_id}/` (raíz de la marca, NO a `_descartes/`). Entregar con status `pendiente de aprobación humana`.
-10. Cuando el usuario decide: si aprueba, mover a `outputs/{client_id}/aprobadas/`; si pide cambios o descarta, mover a `outputs/{client_id}/_descartes/`. La raíz es staging, no archivo final. Ver `outputs/README.md`.
+9. Llamar `generate_image` con prompt + `medias[]`. Descargar a `outputs/{client_id}/` (raíz de la marca, NO a `descartes/`). Entregar con status `pendiente de aprobación humana`.
+10. Cuando el usuario decide: si aprueba, mover a `outputs/{client_id}/aprobadas/`; si pide cambios o descarta, mover a `outputs/{client_id}/descartes/`. La raíz es staging, no archivo final. Ver `outputs/README.md`.
 
 ## Reglas
 - Sin `identity.md`, no se construye prompt.

@@ -1,9 +1,9 @@
 # Descartes de generación — se quedan en disco local, fuera del repo.
 # Higgsfield conserva el historial completo en la nube de todas formas.
-outputs/**/_descartes/
+outputs/**/descartes/
 
 # Staging: las generaciones nuevas viven en outputs/{client_id}/ (raíz) hasta
-# que se aprueban (→ aprobadas/) o se descartan (→ _descartes/). Mientras
+# que se aprueban (→ aprobadas/) o se descartan (→ descartes/). Mientras
 # están sin decidir se quedan locales — solo aprobadas/ entra al repo.
 outputs/*/*.png
 outputs/*/*.jpg

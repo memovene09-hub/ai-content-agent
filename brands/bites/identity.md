@@ -43,7 +43,7 @@ El wordmark del logo es bubble/cartoon bold amarillo con contorno negro.
 Provisional para apoyos: sans-serif redondeada y bold.
 
 ### Logo
-Archivo: `brands/bites/references/identidad/bites-logo.jpeg`.
+Archivo: `brands/bites/references/bites-logo.jpeg`.
 Boca caricaturesca (óvalo rojo + dientes) con "BITES" amarillo y "SNACKS" rojo.
 Fondo blanco; idealmente conseguir versión PNG transparente.
 

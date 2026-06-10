@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1350px; }
+  body {
+    background: transparent;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Viñeta sutil para asentar el centro y dar foco al logo */
+  .vignette {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 75% 60% at center 46%,
+        rgba(19,31,60,0) 0%,
+        rgba(19,31,60,0) 55%,
+        rgba(19,31,60,0.45) 100%);
+    pointer-events: none;
+  }
+
+  .stage {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 100px;
+  }
+
+  .logo {
+    width: 780px;
+    height: auto;
+    filter: drop-shadow(0 8px 40px rgba(105,63,140,0.45))
+            drop-shadow(0 4px 14px rgba(0,0,0,0.5));
+    margin-bottom: 40px;
+  }
+
+  .rule {
+    width: 92px;
+    height: 3px;
+    background: #693f8c;
+    margin-bottom: 36px;
+    box-shadow: 0 0 16px rgba(105,63,140,0.7);
+  }
+
+  .message {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    color: #bdb9d7;
+    text-align: center;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.55);
+  }
+
+  .handle {
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #bdb9d7;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+  }
+</style>
+</head>
+<body>
+  <div class="vignette"></div>
+  <div class="stage">
+    <img class="logo" src="../../brands/claryon/references/claryon-logogrande.png" alt="Claryon">
+    <div class="rule"></div>
+    <div class="message">Automatización + IA para tu negocio</div>
+  </div>
+  <div class="handle">@claryon.mx</div>
+</body>
+</html>

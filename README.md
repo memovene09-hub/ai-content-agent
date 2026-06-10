@@ -40,16 +40,23 @@ skills/                   todas ≤30 líneas, agnósticas a marca
   generar-carrusel.md
   aprender-de-exito.md
 
-templates/carousel/       HTML→PNG para slides tipográficos
+templates/                HTML→PNG para texto/logo sobre fondos
+  carousel/               slides tipográficos de carrusel
+  cover/ hook/ dashboard/ layouts reusables de pieza única
 tools/render-slide.ps1    Edge headless render
-references/               logos del cliente y de marcas externas
+brands/{marca}/references/ logos e inspiración por marca (identidad/ + inspo/)
 carruseles/               outputs históricos
+
+outputs/{marca}/          resultados de generación
+  <raíz>                  staging: cada pieza nace aquí (gitignored)
+  aprobadas/              lo que el usuario aprueba (versionado)
+  descartes/              lo descartado (gitignored, solo local)
 ```
 
 ## Cómo agregar una marca
 
 1. Crea `brands/{nueva-marca}/{identity.md, elements.json, formats.md, successful-prompts.json}`.
-2. Coloca su logo en `references/{nueva-marca}-logo.png`.
+2. Coloca su logo en `brands/{nueva-marca}/references/{nueva-marca}-logo.png` y la inspiración en `references/inspo/`.
 3. Regenera: `.\tools\build-compiled.ps1`.
 
 **No se modifica** `CLAUDE.md`, `MODES.json`, `engines/`, `prompts/` ni las `skills/`.

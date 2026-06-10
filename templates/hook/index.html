@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1350px; }
+  body {
+    background: transparent;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .frame {
+    position: absolute;
+    inset: 0;
+    padding: 60px;
+  }
+
+  /* CAPA MARCA — top */
+  .brand-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 165px;
+  }
+  .brand-logo {
+    height: 165px;
+    width: auto;
+    filter: drop-shadow(0 4px 14px rgba(0,0,0,0.75))
+            drop-shadow(0 0 24px rgba(0,0,0,0.55));
+  }
+  .brand-url {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  }
+
+  /* CAPA TIPOGRÁFICA */
+  .type-block {
+    position: absolute;
+    left: 60px;
+    right: 60px;
+    top: 330px;
+    max-width: 960px;
+  }
+  .headline {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 1.0;
+    letter-spacing: -2px;
+    color: #ffffff;
+    text-shadow: 0 4px 28px rgba(0,0,0,0.65);
+  }
+  .rule {
+    width: 80px;
+    height: 4px;
+    background: #693f8c;
+    margin: 56px 0 44px 0;
+    box-shadow: 0 0 16px rgba(105,63,140,0.7);
+  }
+  .sub {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.25;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  }
+  .sub .accent {
+    color: #693f8c;
+  }
+
+  /* CAPA FOOTER */
+  .footer {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="brand-row">
+      <img class="brand-logo" src="../../brands/claryon/references/claryon-logogrande.png" alt="Claryon">
+      <div class="brand-url">claryon.mx</div>
+    </div>
+
+    <div class="type-block">
+      <div class="headline">
+        Tu equipo no nació<br>
+        para responder el mismo<br>
+        mensaje 50 veces al día.
+      </div>
+      <div class="rule"></div>
+      <div class="sub">
+        Para eso <span class="accent">construimos agentes</span>.
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Claryon · Automatización + IA</div>
+      <div>@claryon.mx</div>
+    </div>
+  </div>
+</body>
+</html>
