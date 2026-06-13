@@ -73,7 +73,8 @@ LinkedIn (principal, autoridad) e Instagram (visual, impacto rápido).
 
 **Higgsfield Basic** es el motor principal de generación visual para esta marca.
 
-- **Aplicable a:** demos de agentes, casos educativos, thought leadership.
+- **Aplicable a:** demos de agentes, casos educativos, thought leadership,
+  video corto de Memo o Leo explicando.
 - **Output adaptable por plataforma:** LinkedIn carrusel, Instagram post, Instagram story, etc. La pieza se ajusta al formato destino sin perder identidad.
 - **Flujo de trabajo:**
   1. Brief (schema definido abajo) + `identity.md`
@@ -84,68 +85,34 @@ Si el brief especifica otro motor por excepción (ej. video pesado), se document
 
 ---
 
-## Personaje visible: Valeria Cruz
+## Vocería visible: Memo + Leo
 
-Mexicana, ~30 años. Ingeniera en sistemas reconvertida a IA aplicada.
-Curiosa, paciente con el cliente, obsesionada con que la tecnología sirva al negocio.
+Memo (Guillermo Venegas) y Leo (Leonardo Rodriguez), co-founders de Claryon.
+Mexicanos, fundadores de consultoría, visibles en contenido de educación,
+demos y thought leadership. Personalizan la autoridad de la marca.
 
-### Físico — LOCK (no cambia)
-| Rasgo | Valor |
-|---|---|
-| Etnia / piel | Latinoamericana mexicana, tono claro-medio cálido (light wheat) |
-| Edad aparente | 28–32 |
-| Complexión | Media, delgada-atlética |
-| Cabello | Castaño oscuro, ondulado natural, largo hasta los hombros |
-| Ojos | Café oscuro, almendrados |
-| Lentes (firma visual) | Monturas redondas tipo "round" delgadas, metal dorado/bronce mate |
-| Pecas | Suaves en el puente de la nariz |
-| Maquillaje | Mínimo natural |
-| Joyería | Stud pequeño en cada oreja |
-| Manos | Uñas cortas naturales |
+### Criterio de aparición
+- **APARECEN:** educativo, demos de agentes, thought leadership, "detrás de Claryon"
+- **NO APARECEN:** tipografía pura, infografía de datos, composiciones que compitan
+  con copy denso
 
-### Wardrobe — FLEX (cambia por pieza)
-Blusa / top / suéter es el elemento variable. El agente propone el color
-según el tema (ej. velocidad → blanco; crecimiento → terracota; confianza → navy).
-
-Paleta permitida: blanco, crema, terracota, mostaza apagado, verde bosque, vino,
-lila polvo, azul cobalto, gris carbón, negro.
-Texturas válidas: seda, knit, oxford, jersey, satinado.
-Evitar: neón puro, estampados gritones, slogans, logos visibles.
-
-### Demeanor
-Mirada concentrada en pantalla, sonrisa ligera al explicar, manos activas,
-postura erguida y relajada. Autoridad sin rigidez.
+Regla: su presencia suma autoridad y humanización. Si distrae, no aparecen.
 
 ### Contextos típicos
-Home office moderno (escritorio madera oscura), café con laptop, co-working
-minimalista, frente a pantalla con agente conversacional o dashboard.
+Home office, frente a pantalla con agente o dashboard, explicando en video corto,
+trabajando juntos en setup.
 
 ### Prompt base reusable
-Variables: `{BLOUSE}`, `{SCENE}`, `{ACTION}`. El resto es lock.
+Variables: `{MEMO_O_LEO}`, `{SCENE}`, `{ACTION}`. Mantener consistencia visual
+con paleta marca (dark navy #131f3c, morado #693f8c accent).
 
-```
-A Latin American Mexican woman, late 20s, light wheat skin tone with subtle freckles across the nose bridge,
-shoulder-length wavy dark brown hair, dark almond-shaped brown eyes,
-thin round gold-metal wireframe glasses, slim athletic build, natural minimal makeup,
-calm focused expression with a slight smile. Wearing {BLOUSE}.
-{SCENE}. {ACTION}.
-Cinematic editorial lighting, dark navy (#131f3c) and warm purple (#693f8c) accents,
-modern professional aesthetic, photorealistic, NOT a stock photo.
-```
-
-### Higgsfield Soul Character
-Estado: PENDIENTE. Cuando haya 5–10 generaciones aprobadas de Valeria,
-se entrena un Soul Character. Mientras tanto el prompt base garantiza ~85% de consistencia.
-
-### Valeria — aparición
+### Aparición
 
 | Frecuencia | Tipos de contenido |
 |---|---|
-| **MAYORÍA** (aparece por defecto) | thought leadership, demos de agentes, casos narrados |
-| **OPCIONAL** (solo si humaniza sin meter ruido) | educativo / infografía |
-| **NUNCA** | tipografía pura, comparativas técnicas |
-
-**Regla de decisión:** antes de incluirla, evalúa si su presencia *suma* (humaniza, da autoridad, narra) o *distrae* (compite con datos, sobrecarga la composición). Si distrae, usa solo gráficos / tipografía.
+| **MAYORÍA** (aparecen por defecto) | thought leadership, demos de agentes, educativo, detrás de Claryon |
+| **OPCIONAL** (solo si humaniza) | casos narrados |
+| **NUNCA** | tipografía pura, infografía de datos |
 
 ---
 
