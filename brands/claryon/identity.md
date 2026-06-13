@@ -7,15 +7,15 @@ operaciones). Resultados rápidos, sin fricción técnica, acompañamiento cerca
 Audiencia: dueños de negocio, directores comerciales y gerentes de ops en
 empresas de 10–200 empleados en México.
 
-Founders detrás de la marca: Memo y Leo. **No aparecen** como personajes
-visibles en contenido — la vocera visible es Valeria Cruz.
+Founders detrás de la marca: Memo y Leo. Son la **vocería visible** del
+contenido (ver sección "Vocería visible: Memo + Leo").
 
 ## Voz de marca
 - Profesional y directo — sin rodeos, sin relleno corporativo.
 - Cercano sin ser informal — habla de igual a igual con el dueño.
 - Orientado a resultados: lo que el cliente gana, no la tecnología.
 - Español neutro con naturalidad mexicana. No traducción literal del inglés.
-- Autoridad sin pedantería: Valeria sabe de lo que habla y se nota.
+- Autoridad sin pedantería: los founders saben de lo que hablan y se nota.
 
 ## Identidad visual
 
@@ -62,7 +62,7 @@ Etiquetas internas localizables:
 - **Demos de agentes** — flujo automatizado funcionando, resultado tangible visible.
 - **Casos de éxito** — antes/después de implementar automatización en una MIPYME.
 - **Educación sobre IA** — conceptos simples anclados a problemas reales.
-- **Voz experta de Valeria** — thought leadership desde la práctica.
+- **Voz experta de Memo + Leo** — thought leadership desde la práctica.
 
 ## Plataformas objetivo
 LinkedIn (principal, autoridad) e Instagram (visual, impacto rápido).
@@ -125,14 +125,14 @@ Todo trabajo de generación parte de un brief con esta forma:
 {
   "tipo_contenido": "educativo | caso | demo | thought-leadership",
   "plataforma": "linkedin | instagram-post | instagram-story",
-  "incluir_valeria": true,
+  "incluir_memo_leo": true,
   "copy": "texto exacto o estructura del mensaje",
   "visual_mood": "cinematográfico oscuro | datos clean | demo en acción",
   "paleta_override": "opcional — solo si se cambia el default navy+morado"
 }
 ```
 
-`incluir_valeria` respeta la tabla de aparición de arriba. `paleta_override` se usa con cautela y solo cuando la pieza lo justifica.
+`incluir_memo_leo` respeta la tabla de aparición de arriba. `paleta_override` se usa con cautela y solo cuando la pieza lo justifica.
 
 ### Schema de `successful-prompts.json` (aprender de éxitos)
 Cada pieza aprobada se registra para retroalimentar futuras generaciones:
@@ -142,7 +142,7 @@ Cada pieza aprobada se registra para retroalimentar futuras generaciones:
   "id": "unique-id",
   "tipo_contenido": "educativo | caso | demo | thought-leadership",
   "copy_estructura": "patrón del copy que funcionó",
-  "valeria_contexto": "cómo apareció (o por qué no apareció)",
+  "voceria_contexto": "cómo aparecieron Memo/Leo (o por qué no aparecieron)",
   "constraints_clave": ["restricciones que fueron decisivas"],
   "engagement_resultado": "métrica / observación cualitativa",
   "fecha_aprobacion": "YYYY-MM-DD"
@@ -153,9 +153,9 @@ Cada pieza aprobada se registra para retroalimentar futuras generaciones:
 
 ## Aplicación por tipo
 
-| Tipo | Visual core | Valeria | Mood / paleta |
+| Tipo | Visual core | Memo + Leo | Mood / paleta |
 |---|---|---|---|
-| **Demos de agentes** | Valeria *working*, flujo del agente visible, resultado claro y tangible | Sí | Dark mood, cinematográfico |
-| **Casos de éxito** | Before / after visual, datos cuantitativos del impacto | Opcional | Cinematográfico o datos clean |
-| **Educativo** | Concepto → ejemplo real → CTA. Tipografía clara, jerarquía fuerte | Opcional | Datos clean, paleta marca |
-| **Thought leadership** | Valeria pensando o explicando, claim grande, composición editorial | Sí | Cinematográfico oscuro |
+| **Demos de agentes** | Memo o Leo *working*, flujo del agente visible, resultado claro y tangible | Sí (demuestran, explican) | Dark mood, cinematográfico |
+| **Casos de éxito** | Before / after visual, datos cuantitativos del impacto | Opcional (humaniza si suma) | Cinematográfico o datos clean |
+| **Educativo** | Concepto → ejemplo real → CTA. Tipografía clara, jerarquía fuerte | Opcional (humaniza si suma) | Datos clean, paleta marca |
+| **Thought leadership** | Memo o Leo explicando, claim grande, composición editorial | Sí (demuestran, explican) | Cinematográfico oscuro |
